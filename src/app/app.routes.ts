@@ -18,7 +18,7 @@ import { isLoggedGuardGuard } from '../core/guards/is-logged-guard.guard';
 import { AddressComponent } from '../Components/address/address.component';
 
 export const routes: Routes = [
-    {path : 'auth' , component : AuthLayoutComponent,
+    {path : '' , component : AuthLayoutComponent,
         canActivate : [isLoggedGuardGuard],
         children : [
         {path : '', redirectTo : 'signin', pathMatch : "full"},
